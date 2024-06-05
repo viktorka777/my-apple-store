@@ -7,32 +7,140 @@
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #444;
+  padding: 10px 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.language-select, .account-options {
+  display: flex;
+  align-items: center;
+}
+
+.language-select a, .account-options a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.language-select a:hover, .account-options a:hover {
+  text-decoration: underline;
+}
+
+.account-options a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.account-options .icon-spacing {
+  margin-right: 5px; /* Додає відступ праворуч до іконок */
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.App-header img {
+  height: 80px;
+  margin-right: 10px; /* Зменшений відступ між логотипом і заголовком */
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.basket-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Вирівнювання кошика праворуч */
+}
+
+.basket-icon {
+  display: flex;
+  align-items: center;
+}
+
+.basket-icon a {
+  color: #8bc34a; /* Зелений колір тексту для кошика */
+}
+
+.basket-icon .icon-spacing {
+  margin-right: 5px; /* Додає відступ праворуч до іконки кошика */
+}
+
+.order-summary {
+  text-align: right; /* Вирівнювання тексту "Загальна сума" праворуч */
+}
+
+.App-header nav {
+  margin-top: 10px;
+}
+
+.nav-items {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%; /* Розтягуємо навігаційні пункти на всю ширину */
+}
+
+.nav-items li {
+  flex: 1; /* Рівномірний розподіл пунктів */
+  text-align: center; /* Центрування тексту в пунктах */
+}
+
+.nav-items a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-items a:hover {
+  text-decoration: underline;
+}
+
+.apple-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.green-text {
+  color: #8bc34a; /* Зелений колір тексту */
 }
